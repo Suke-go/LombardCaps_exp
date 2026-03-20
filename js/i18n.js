@@ -187,6 +187,10 @@ const STRINGS = {
   post_pref_opts: { en: ["All words same size", "Some words smaller/larger (grammar-based)", "Some words smaller/larger (emphasis-based)", "Combination of grammar and emphasis"], ja: ["全単語が同じサイズ", "文法に基づいて大小がある", "強調に基づいて大小がある", "文法と強調の組み合わせ"] },
   post_impressions: { en: "Please share any impressions or comments about the experiment.", ja: "実験の感想やコメントがあればお書きください。" },
 
+  // Per-clip prior exposure (asked at the start of each clip's quiz)
+  clip_prior_exposure: { en: "Had you seen this video before today?", ja: "この動画を今日以前に見たことがありましたか？" },
+  clip_prior_opts: { en: ["No, this was my first time seeing it", "Yes, but I didn't remember the content", "Yes, and I remembered the content"], ja: ["いいえ、初めて見ました", "はい、見たことがありますが内容は覚えていませんでした", "はい、見たことがあり内容も覚えていました"] },
+
   // Completion
   complete_title: { en: "Thank you!", ja: "ご協力ありがとうございました！" },
   complete_body: { en: "Your responses have been recorded. You may now close this page.", ja: "回答が記録されました。このページを閉じていただいて結構です。" },

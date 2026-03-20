@@ -13,3 +13,13 @@ config/pretest_questions.json
 
 # Source media (already processed)
 *_full.*
+
+# Practice clip temp files
+data/practice/video_old_robinson.mp4
+data/practice/audio.wav
+data/practice/audio.json
+ethical_review/ethics_documents.zip
+ethical_review/sample/
+ethical_review/_generation_progress.json
+ethical_review/_intermediate_plan.json
+ethical_review/application_form.json

@@ -308,7 +308,14 @@
           data: { phase: 'trial_video', clip_id: clipId, legacy_id: cd.legacyDir, condition, D_new: clipInfo.D_new, trial_index: idx },
         });
 
-        // 6b. Comprehension quiz (3 content questions, pre-loaded)
+        // 6b. Prior exposure check (first question for each clip)
+        trials.push({
+          type: jsPsychSurveyMultiChoice,
+          questions: [{ prompt: t('clip_prior_exposure'), name: `prior_exposure_${clipId}`, options: t('clip_prior_opts'), required: true }],
+          data: { phase: 'prior_exposure', clip_id: clipId, condition },
+        });
+
+        // 6c. Comprehension quiz (3 content questions, pre-loaded)
         if (qData?.comprehension) {
           const contentQs = qData.comprehension.filter(q => !q.is_dummy);
           const selected = shuffle(contentQs).slice(0, 3);
