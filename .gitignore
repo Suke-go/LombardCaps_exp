@@ -1,0 +1,15 @@
+# Dev tools (not needed for deployment)
+encrypt_questions.js
+js/gas_server.js
+data/pretest/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Unencrypted questions (use .enc.json only)
+data/*/questions.json
+config/pretest_questions.json
+
+# Source media (already processed)
+*_full.*
